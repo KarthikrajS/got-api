@@ -18,9 +18,11 @@ router.post('/battleBasedOnLocation',(req,res)=>{
     console.log(req.body)
     const {location} = req.body;
     battledatas.find({location: location}).then(battledata=>{
+        console.log(battledata)
         res.json({results:{battles:battledata}})
     }).catch(err => res.status(400).json({errors: parseErrors(err.errors)}));
 })
+
 
 router.post('/list',(req,res)=>{
     /*returns list(array) of all the places where the battle has taken place.
