@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "node --experimetal-modules src/index.js"
+    "start": "node --experimental-modules src/index.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
