@@ -7,6 +7,7 @@ import dotenv from 'dotenv';
 import Promise from 'bluebird';
 
 dotenv.config()
+const __dirname = path.resolve()
 const app = express();
 app.use(bodyParser.json());
 mongoose.Promise = Promise;
