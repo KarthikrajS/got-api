@@ -1,11 +1,11 @@
 {
   "name": "got-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.cjs",
   "license": "MIT",
-  "type": "module",
+
   "scripts": {
-    "start": "node --experimetal-modules --entry-type=module --experimental-json-modules src/index.js"
+    "start": "node src/index.cjs"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
