@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'path';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
-import battleData from './routes/battleData';
+import battleData from 'src/routes/battleData';
 import dotenv from 'dotenv';
 import Promise from 'bluebird';
 
