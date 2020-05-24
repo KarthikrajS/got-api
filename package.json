@@ -3,18 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "type": "module",
   "scripts": {
-    "start": "node --experimental-modules --es-module-specifier-resolution=node src/index.mjs"
+    "start": "node src/index.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "nodemon": "^2.0.3"
-  },
-  "resolutions": {
-    "is-promise": "2.1.0",
-    "run-async/is-promise" : "2.1.0"
   },
   "dependencies": {
     "bluebird": "^3.7.2",
@@ -23,7 +18,5 @@
     "express": "^4.17.1",
     "lodash": "^4.17.15",
     "mongoose": "^5.9.13"
-  },
-  "repository": "https://github.com/KarthikrajS/got-api.git",
-  "author": "<karthikraj1995@gmail.com>"
+  }
 }
