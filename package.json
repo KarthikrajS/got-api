@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "tsc index.ts",
+    "build": "tsc src/index.ts",
     "start": "node --experimental-modules src/index.ts"
   },
   "devDependencies": {
