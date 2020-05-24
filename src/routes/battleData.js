@@ -165,5 +165,4 @@ router.post('/search',(req,res)=>{
  /search?king=Robb Stark&location=Riverrun&type=siege
 */
 });
-
 export default router;

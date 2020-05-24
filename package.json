@@ -5,7 +5,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "node --experimental-modules src/index.js"
+    "build": "tsc index.ts",
+    "start": "node --experimental-modules src/index.ts"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
