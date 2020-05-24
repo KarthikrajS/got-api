@@ -1,1 +1,1 @@
-web: node src/index.mjs
+web: yarn start

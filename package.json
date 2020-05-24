@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "start": "node --experimetal-modules --entry-type=module --experimental-json-modules src/index.mjs"
+    "start": "node --experimetal-modules --entry-type=module --experimental-json-modules src/index.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
