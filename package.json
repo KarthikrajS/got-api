@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node --experimetal-modules --es-module-specifier-resolution=node src/index.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
