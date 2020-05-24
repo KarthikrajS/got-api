@@ -6,4 +6,5 @@ export default function (errors) {
         result[key] = val.message;
     });
     return result;
+    
 }
