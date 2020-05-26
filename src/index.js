@@ -10,12 +10,25 @@ import cors from 'cors'
 dotenv.config()
 const __dirname = path.resolve()
 const app = express();
-app.use(cors())
+var whitelist =['https://battleapp-got.herokuapp.com/']
+
 app.use(bodyParser.json());
 mongoose.Promise = Promise;
 mongoose.connect(process.env.MONGODB_URL,{ useUnifiedTopology: true , useNewUrlParser: true})
 app.use('/api/battleData',battleData);
-app.get('/*',(req,res)=>{
+var corsOption ={
+    origin: function (origin, callback) {
+        if (whitelist.indexOf(origin) !== -1){
+            callback(null, true)
+        }
+        else{
+            callback(new Error('Not allowed by cors'))
+        }
+
+    }
+}
+
+app.get('/*', cors(corsOption),(req,res)=>{
     res.sendFile(path.join(__dirname,'src/index.html'));
 })
 const PORT = process.env.PORT || 8080;
