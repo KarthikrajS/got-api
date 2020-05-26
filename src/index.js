@@ -17,4 +17,4 @@ app.get('/*',(req,res)=>{
     res.sendFile(path.join(__dirname,'src/index.html'));
 })
 const PORT = process.env.PORT || 8080;
-app.listen(PORT,()=> console.log(`running on ${PORT}`));
+app.listen(PORT,'0.0.0.0',()=> console.log(`running on ${PORT}`));
