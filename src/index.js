@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 mongoose.Promise = Promise;
 mongoose.connect(process.env.MONGODB_URL,{ useUnifiedTopology: true , useNewUrlParser: true})
 
-app.use('/api/battleData',battleData);
+app.use('/battleData',battleData);
 app.use(cors())
 app.get('/*',(req,res)=>{
     res.sendFile(path.join(__dirname,'src/index.html'),function (err){
