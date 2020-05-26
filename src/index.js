@@ -19,6 +19,7 @@ app.use('/api/battleData',battleData);
 app.use(cors())
 app.get('/*',(req,res)=>{
     res.sendFile(path.join(__dirname,'src/index.html'));
+    if(err) res.status(500).send(err)
 })
 const PORT = process.env.PORT || 8080;
 
